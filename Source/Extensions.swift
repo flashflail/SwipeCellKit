@@ -44,11 +44,11 @@ extension UILabel {
             guard let text = text as NSString? else { return font.pointSize }
             var currentFont: UIFont = font
             let originalFontSize = currentFont.pointSize
-            var currentSize: CGSize = text.size(withAttributes: [NSAttributedStringKey.font: currentFont])
+            var currentSize: CGSize = text.size(withAttributes: [NSAttributedString.Key.font: currentFont])
             
             while currentSize.width > frame.size.width && currentFont.pointSize > (originalFontSize * minimumScaleFactor) {
                 currentFont = currentFont.withSize(currentFont.pointSize - 1)
-                currentSize = text.size(withAttributes: [NSAttributedStringKey.font: currentFont])
+                currentSize = text.size(withAttributes: [NSAttributedString.Key.font: currentFont])
             }
             
             return currentFont.pointSize
