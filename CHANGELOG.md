@@ -2,17 +2,63 @@
 
 `SwipeCellKit` adheres to [Semantic Versioning](http://semver.org/).
 
+## [2.5.0](https://github.com/jerkoch/SwipeCellKit/releases/tag/2.5.0)
+
+#### Fixed
+
+- Update to Swift 4.2 and Xcode 10 Support (#215)
+
+---
+
+## [2.4.3](https://github.com/jerkoch/SwipeCellKit/releases/tag/2.4.3)
+
+#### Fixed
+
+- Fix issue where swipe cell does not return to neutral position correctly when swipping cell very quickly (#215)
+
+---
+
+## [2.4.2](https://github.com/jerkoch/SwipeCellKit/releases/tag/2.4.2)
+
+#### Fixed
+
+- Fix swipe action position when rotating a UITableView/UICollectionView with safe area insets.
+- Fix issue where gesture cancellation causes swipe cell to remain in dragging state in a non-left, right or centre x position.
+- Fix issue where expansion may trigger when swiping in the expansion zone very quickly.
+
+---
+
+## [2.4.1](https://github.com/jerkoch/SwipeCellKit/releases/tag/2.4.1)
+
+#### Fixed
+
+- Fix issue with swipe action handler not being invoked correctly at all times (#204, #205)
+
+---
+
+## [2.4.0](https://github.com/jerkoch/SwipeCellKit/releases/tag/2.4.0)
+
+#### Added
+
+- `UICollectionView` support. You can now add swipe actions to a `UICollectionViewCell` by using the `SwipeCollectionViewCell` (#4)
+
+---
+
 ## [2.3.2](https://github.com/jerkoch/SwipeCellKit/releases/tag/2.3.2)
 
 #### Fixed
 
 - Add default implementation for `visibleRect(for tableView: UITableView)` as its optional (#201)
 
+---
+
 ## [2.3.1](https://github.com/jerkoch/SwipeCellKit/releases/tag/2.3.1)
 
 #### Fixed
 
 - Fix issue where swiping a cell does not work while another cell is open (#197)
+
+---
 
 ## [2.3.0](https://github.com/jerkoch/SwipeCellKit/releases/tag/2.3.0)
 
@@ -24,6 +70,8 @@
 
 - Resolved issue where touching cell in swipe expantion zone resulted in immediate cell expansion (#194)
 - Reselect swipped cell if it was previously selected (#58)
+
+---
 
 ## [2.2.0](https://github.com/jerkoch/SwipeCellKit/releases/tag/2.2.0)
 
