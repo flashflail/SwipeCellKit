@@ -148,6 +148,7 @@
 				3F234ABF1E44A7A400E22A38 /* Frameworks */,
 				3F234AC01E44A7A400E22A38 /* Headers */,
 				3F234AC11E44A7A400E22A38 /* Resources */,
+				3AE8C7DA2212FF81007B1E6B /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -199,6 +200,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3AE8C7DA2212FF81007B1E6B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "ditto ${BUILT_PRODUCTS_DIR}/SwipeCellKit.framework ${SRCROOT}/../../ONECore/ONECore/Frameworks/${PLATFORM_NAME}/SwipeCellKit.framework\n\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		3F234ABE1E44A7A400E22A38 /* Sources */ = {
